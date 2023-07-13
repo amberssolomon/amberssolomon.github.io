@@ -121,7 +121,7 @@ window.DemoUtils = {
   },
   
   
-  createCubeScene() {
+  createArrowScene() {
     //Create renderer + Canvas    
     const scene = new THREE.Scene();
 
