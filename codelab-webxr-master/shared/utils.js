@@ -126,28 +126,28 @@ window.DemoUtils = {
     const scene = new THREE.Scene();
 
     //Create Sphere + Cube
-    let sphereRadius = 1;
-    let sphereGeometry = new THREE.SphereBufferGeometry(
+    const sphereRadius = 1;
+    const sphereGeometry = new THREE.SphereBufferGeometry(
         sphereRadius,
         16, //Width segments
         16 //Height segments
     );
-    let sphereMaterial = new THREE.MeshLambertMaterial({
+    const sphereMaterial = new THREE.MeshLambertMaterial({
         color: 0xFF0000 //Red
     });
-    let sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
-    let cubeGeometry = new THREE.BoxBufferGeometry(
+    const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
+    const cubeGeometry = new THREE.BoxBufferGeometry(
         1.5 * sphereRadius, //Width
         1.5 * sphereRadius, //Height
         1.5 * sphereRadius //Depth
     );
-    let cubeMaterial = new THREE.MeshLambertMaterial({
+    const cubeMaterial = new THREE.MeshLambertMaterial({
         color: 0x00FF00 //Green
     });
-    let cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
+    const cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
     
     //Group shapes together and add group to the scene
-    let shapes = new THREE.Object3D();
+    const shapes = new THREE.Object3D();
     shapes.add(sphereMesh);
     shapes.add(cubeMesh);
     shapes.position.setY(1.7); //Place at eye level
@@ -155,7 +155,7 @@ window.DemoUtils = {
     scene.add(shapes);
     
     //Add light to the scene
-    let light = new THREE.PointLight();
+    const light = new THREE.PointLight();
     light.position.setY(2);
     scene.add(light);
     
