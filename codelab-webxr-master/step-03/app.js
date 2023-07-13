@@ -131,7 +131,6 @@ class App {
     this.renderer.autoClear = false;
 
     // Initialize our demo scene.
-    //this.scene = DemoUtils.createCubeScene();
     this.scene = DemoUtils.createArrowScene();
 
     // We'll update the camera matrices directly from API, so
