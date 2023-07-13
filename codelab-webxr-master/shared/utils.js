@@ -154,6 +154,26 @@ window.DemoUtils = {
     shapes.position.setZ(-10); //Move shape forward so we can see it
     scene.add(shapes);
     
+    const materials = [
+      new THREE.MeshBasicMaterial({ color: 0xff0000 }),
+      new THREE.MeshBasicMaterial({ color: 0x0000ff }),
+      new THREE.MeshBasicMaterial({ color: 0x00ff00 }),
+      new THREE.MeshBasicMaterial({ color: 0xff00ff }),
+      new THREE.MeshBasicMaterial({ color: 0x00ffff }),
+      new THREE.MeshBasicMaterial({ color: 0xffff00 })
+    ];
+    
+    const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.2, 0.2, 0.2), materials);
+	const shapes2 = new THREE.Object3D();
+    shapes2.add(box);
+    shapes2.position.setY(1.7); //Place at eye level
+    shapes2.position.setZ(-10); //Move shape forward so we can see it
+    shapes2.position.setX(20);
+    scene.add(shapes2);
+    
+    
+    
+    
     //Add light to the scene
     const light = new THREE.PointLight();
     light.position.setY(2);
