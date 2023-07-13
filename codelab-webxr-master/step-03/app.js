@@ -131,7 +131,8 @@ class App {
     this.renderer.autoClear = false;
 
     // Initialize our demo scene.
-    this.scene = DemoUtils.createCubeScene();
+    //this.scene = DemoUtils.createCubeScene();
+    this.scene = DemoUtils.createArrowScene();
 
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt
