@@ -159,16 +159,6 @@ window.DemoUtils = {
     light.position.setY(2);
     scene.add(light);
     
-    //Our animation loop
-    let clock = new THREE.Clock(); //Need to keep track of time elapsed between frames
-    function update() {
-        let timeDelta = clock.getDelta();
-        let rotationAmount = 2 * Math.PI * timeDelta * 0.1; //0.1 rotations per second
-        shapes.rotation.x += rotationAmount;
-        shapes.rotation.y += rotationAmount;
-        renderer.render(scene, camera);
-    }
-
     return scene;
   },
   
