@@ -15,7 +15,7 @@
 
 const scene = new THREE.Scene();
 
-const loader = new GLTFLoader()
+const loader = new THREE.GLTFLoader()
 loader.load(
     "https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf",
     function (gltf) {
