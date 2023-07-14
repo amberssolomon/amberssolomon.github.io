@@ -13,6 +13,36 @@
  * limitations under the License.
  */
 
+const scene = new THREE.Scene();
+
+const loader = new GLTFLoader()
+loader.load(
+    'apple_vision_home_page_mixed_reality.gltf',
+    function (gltf) {
+        // gltf.scene.traverse(function (child) {
+        //     if ((child as THREE.Mesh).isMesh) {
+        //         const m = (child as THREE.Mesh)
+        //         m.receiveShadow = true
+        //         m.castShadow = true
+        //     }
+        //     if (((child as THREE.Light)).isLight) {
+        //         const l = (child as THREE.SpotLight)
+        //         l.castShadow = true
+        //         l.shadow.bias = -.003
+        //         l.shadow.mapSize.width = 2048
+        //         l.shadow.mapSize.height = 2048
+        //     }
+        // })
+        scene.add(gltf.scene)
+    },
+    (xhr) => {
+        console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
+    },
+    (error) => {
+        console.log(error)
+    }
+)
+
 window.gltfLoader = new THREE.GLTFLoader();
 /**
  * The Reticle class creates an object that repeatedly calls
@@ -33,8 +63,8 @@ class Reticle extends THREE.Object3D {
 }
 
 window.gltfLoader.load("tester.gltf", function(gltf) {
-  const flower = gltf.scene.children.find(c => c.name === 'sunflower')
-  flower.castShadow = true;
+  //const flower = gltf.scene.children.find(c => c.name === 'sunflower')
+  //flower.castShadow = true;
   window.sunflower = gltf.scene;
 });
 
@@ -47,7 +77,6 @@ window.DemoUtils = {
    * @return {THREE.Scene}
    */
   createLitScene() {
-    const scene = new THREE.Scene();
 
     // The materials will render as a black mesh
     // without lights in our scenes. Let's add an ambient light
@@ -92,7 +121,6 @@ window.DemoUtils = {
    * @return {THREE.Scene}
    */
   createCubeScene() {
-    const scene = new THREE.Scene();
 
     const materials = [
       new THREE.MeshBasicMaterial({ color: 0xff0000 }),
@@ -123,7 +151,6 @@ window.DemoUtils = {
   
   createArrowScene() {
     //Create renderer + Canvas    
-    const scene = new THREE.Scene();
 
     //Create Sphere + Cube
     const sphereRadius = 1;
@@ -180,12 +207,14 @@ window.DemoUtils = {
   },
   
   createSunflowerScene() {
-  	const scene = new THREE.Scene();
+  	
 
+/**
   	if (window.sunflower) {
       const clone = window.sunflower.clone();
       scene.add(clone)
     }
+    **/
     
      //Add light to the scene
     const light = new THREE.PointLight();
