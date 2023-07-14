@@ -119,6 +119,7 @@ class App {
    * Initialize three.js specific rendering code, including a WebGLRenderer,
    * a demo scene, and a camera for viewing the 3D content.
    */
+  
   setupThreeJs() {
     // To help with working with 3D on the web, we'll use three.js.
     // Set up the WebGLRenderer, which handles rendering to our session's base layer.
@@ -131,7 +132,7 @@ class App {
     this.renderer.autoClear = false;
 
     // Initialize our demo scene.
-    this.scene = DemoUtils.createArrowScene();
+    this.scene = DemoUtils.createSunflowerScene();
 
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt
