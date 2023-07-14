@@ -17,7 +17,7 @@ const scene = new THREE.Scene();
 
 const loader = new THREE.GLTFLoader()
 loader.load(
-    "https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf",
+    "apple_vision_home_page_mixed_reality.gltf",
     function (gltf) {
         // gltf.scene.traverse(function (child) {
         //     if ((child as THREE.Mesh).isMesh) {
