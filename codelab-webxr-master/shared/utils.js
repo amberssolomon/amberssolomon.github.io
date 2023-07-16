@@ -16,8 +16,20 @@
 const scene = new THREE.Scene();
 
 const loader = new THREE.GLTFLoader()
-loader.load(
-    "jump_domi.gltf",
+loader.load("jump_domi.gltf", (object) => {
+	//object.scene.position.y = -1.5;
+	object.scene.position.x = 0;
+	object.scene.position.y = 0;
+	object.scene.position.z = -20;
+	object.scene.position.x = 0;
+	object.scale.multiplyScalar(10);
+	scene.add(object.scene);
+
+});
+
+
+/**loader.load(
+    "tester.gltf",
     function (gltf) {
         // gltf.scene.traverse(function (child) {
         //     if ((child as THREE.Mesh).isMesh) {
@@ -41,7 +53,7 @@ loader.load(
     (error) => {
         console.log(error)
     }
-)
+)**/
 
 window.gltfLoader = new THREE.GLTFLoader();
 /**
