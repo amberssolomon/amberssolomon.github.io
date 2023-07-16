@@ -22,7 +22,7 @@ loader.load("jump_domi.gltf", (object) => {
 	object.scene.position.y = 0;
 	object.scene.position.z = -20;
 	object.scene.position.x = 0;
-	object.scale.multiplyScalar(10);
+	//object.scale.multiplyScalar(10);
 	scene.add(object.scene);
 
 });
