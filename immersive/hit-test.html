@@ -41,7 +41,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           This sample demonstrates the use of hit testing to place virtual objects on real-world surfaces.
           <a class="back" href="./">Back</a>
         </p-->
-         <button id="green-button" visibility="hidden">
+         <button id="green-button" class="barebones-button" visibility="hidden">
             Green button
           </button>
            <button id="red-button" class="barebones-button" >
@@ -152,7 +152,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
        root: document.getElementById("overlay")
      }})
                            .then((session) => {
-          greenButton.style.visibility = 'visible';
+          greenButton.style.visibility = 'hidden';
           
           xrButton.setSession(session);
           onSessionStarted(session);
