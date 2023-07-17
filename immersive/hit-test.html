@@ -147,7 +147,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
       function onRequestSession() {
-        return navigator.xr.requestSession('immersive-ar', {requiredFeatures: ['local', 'hit-test']})
+        return navigator.xr.requestSession('immersive-ar', 
+        {requiredFeatures: ['local', 'hit-test', 'dom-overlay'], domOverlay: {
+       root: document.getElementById("overlay")
+     }})
                            .then((session) => {
           xrButton.setSession(session);
           onSessionStarted(session);
