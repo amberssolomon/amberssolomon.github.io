@@ -21,6 +21,8 @@
   const isArSessionSupported = navigator.xr && navigator.xr.isSessionSupported && await navigator.xr.isSessionSupported("immersive-ar");
   if (isArSessionSupported) {
     document.getElementById("enter-ar").addEventListener("click", window.app.activateXR)
+    document.getElementById("btnBlue").addEventListener("click", () => window.app.activateXR)
+    document.getElementById("btnGreen").addEventListener("click", () => window.app.setupFourJs)
   } else {
     onNoXRDevice();
   }
@@ -133,6 +135,28 @@ class App {
 
     // Initialize our demo scene.
     this.scene = DemoUtils.createSunflowerScene();
+
+    // We'll update the camera matrices directly from API, so
+    // disable matrix auto updates so three.js doesn't attempt
+    // to handle the matrices independently.
+    this.camera = new THREE.PerspectiveCamera();
+    this.camera.matrixAutoUpdate = false;
+  }
+};
+
+ setupFourJs() {
+    // To help with working with 3D on the web, we'll use three.js.
+    // Set up the WebGLRenderer, which handles rendering to our session's base layer.
+    this.renderer = new THREE.WebGLRenderer({
+      alpha: true,
+      preserveDrawingBuffer: true,
+      canvas: this.canvas,
+      context: this.gl
+    });
+    this.renderer.autoClear = false;
+
+    // Initialize our demo scene.
+    this.scene = DemoUtils.createMapScene();
 
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt

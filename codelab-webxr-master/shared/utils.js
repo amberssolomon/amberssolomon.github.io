@@ -237,6 +237,32 @@ window.DemoUtils = {
   
   },
   
+  createMapScene() {
+  	
+
+	const scene2 = new THREE.Scene();
+
+	const loader2 = new THREE.GLTFLoader()
+	loader2.load("tester.gltf", (object) => {
+	//object.scene.position.y = -1.5;
+	object.scene.position.x = 0;
+	object.scene.position.y = 0;
+	object.scene.position.z = -20;
+	object.scene.position.x = 0;
+	//object.scale.multiplyScalar(10);
+	scene2.add(object.scene);
+
+});
+    
+     //Add light to the scene
+    const light = new THREE.PointLight();
+    light.position.setY(2);
+    scene2.add(light);
+    
+    return scene2;
+  
+  },
+  
 };
 
 /**
