@@ -144,7 +144,7 @@ class App {
     this.camera = new THREE.PerspectiveCamera();
     this.camera.matrixAutoUpdate = false;
   }
-  
+  /**
   setupFourJs() {
     // To help with working with 3D on the web, we'll use three.js.
     // Set up the WebGLRenderer, which handles rendering to our session's base layer.
@@ -164,7 +164,7 @@ class App {
     // to handle the matrices independently.
     this.camera = new THREE.PerspectiveCamera();
     this.camera.matrixAutoUpdate = false;
-  }
+  }**/
 };
 
 
