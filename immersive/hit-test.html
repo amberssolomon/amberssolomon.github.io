@@ -68,7 +68,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       scene.addNode(arObject);
 
       let flower = new Gltf2Node({url: 'jump_domi1.gltf'});
-      //flower.scale = [0.1, 0.1, 0.1];
+      flower.scale = [0.05, 0.05, 0.05];
       arObject.addNode(flower);
 
       let reticle = new Gltf2Node({url: 'media/gltf/reticle/reticle.gltf'});
@@ -174,6 +174,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           let oldFlower = flowers.shift();
           scene.removeNode(oldFlower);
         }
+        
+        
       }
 
       let rayOrigin = vec3.create();
