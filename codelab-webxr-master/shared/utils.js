@@ -252,7 +252,7 @@ window.DemoUtils = {
 	//object.scale.multiplyScalar(10);
 	scene2.add(object.scene);
 
-});
+	});
     
      //Add light to the scene
     const light = new THREE.PointLight();
