@@ -245,11 +245,10 @@ window.DemoUtils = {
 	const loader2 = new THREE.GLTFLoader()
 	loader2.load("tester.gltf", (object) => {
 	//object.scene.position.y = -1.5;
-	object.scene.position.x = 0;
-	object.scene.position.y = 0;
+	object.scene.position.x = 20;
+	//object.scene.position.y = 0;
 	object.scene.position.z = -20;
-	object.scene.position.x = 0;
-	//object.scale.multiplyScalar(10);
+	object.scene.scale.multiplyScalar(10);
 	scene2.add(object.scene);
 
 	});
