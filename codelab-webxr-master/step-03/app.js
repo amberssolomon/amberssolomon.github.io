@@ -21,8 +21,8 @@
   const isArSessionSupported = navigator.xr && navigator.xr.isSessionSupported && await navigator.xr.isSessionSupported("immersive-ar");
   if (isArSessionSupported) {
     document.getElementById("enter-ar").addEventListener("click", window.app.activateXR)
-    document.getElementById("btnBlue").addEventListener("click", () => window.app.activateXR)
-    document.getElementById("btnGreen").addEventListener("click", () => window.app.setupFourJs)
+   // document.getElementById("btnBlue").addEventListener("click", () => window.app.activateXR)
+  //  document.getElementById("btnGreen").addEventListener("click", () => window.app.setupFourJs)
   } else {
     onNoXRDevice();
   }
@@ -72,8 +72,8 @@ class App {
    */
   async onSessionStarted() {
     // Add the `ar` class to our body, which will hide our 2D components
-    //document.body.classList.add('ar');
-        document.body.appendChild('ar');
+    document.body.classList.add('ar');
+    document.body.appendChild('ar');
 
 
     // To help with working with 3D on the web, we'll use three.js.
