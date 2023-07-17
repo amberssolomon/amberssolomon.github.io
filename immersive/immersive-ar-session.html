@@ -65,22 +65,44 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let xrButton = null;
       let xrImmersiveRefSpace = null;
       let inlineViewerHelper = null;
+      let xrViewerSpace = null;
+
 
       // WebGL scene globals.
       let gl = null;
       let renderer = null;
       let scene = new Scene();
+      scene.enableStats(false);
+      
+      let arObject = new Node();
+      arObject.visible = false;
+      scene.addNode(arObject);
+      
+      
       let solarSystem = new Gltf2Node({url: 'jump_domi1.gltf'});
+       solarSystem.scale = [0.1, 0.1, 0.1];
+      arObject.addNode(solarSystem);
+
+
+   // Having a really simple drop shadow underneath an object helps ground
+      // it in the world without adding much complexity.
+      let shadow = new DropShadowNode();
+      vec3.set(shadow.scale, 0.15, 0.15, 0.15);
+      arObject.addNode(shadow);
+
+  // Ensure the background is transparent for AR.
+      scene.clear = false;
+
+
       //let solarSystem = new Gltf2Node({url: 'media/gltf/space/space.gltf'});
 
       // The solar system is big (citation needed). Scale it down so that users
       // can move around the planets more easily.
-      solarSystem.scale = [0.1, 0.1, 0.1];
-      solarSystem.translate = [0.1, 0.1, 0.1];
-      scene.addNode(solarSystem);
+      //solarSystem.translate = [0.1, 0.1, 0.1];
+      //scene.addNode(solarSystem);
        //Still adding a skybox, but only for the benefit of the inline view.
-      let skybox = new SkyboxNode({url: 'media/textures/milky-way-4k.png'});
-      scene.addNode(skybox);
+      //let skybox = new SkyboxNode({url: 'media/textures/milky-way-4k.png'});
+      //scene.addNode(skybox);
 
       function initXR() {
         xrButton = new WebXRButton({
@@ -99,7 +121,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             xrButton.enabled = supported;
           });
 
-          navigator.xr.requestSession('inline').then(onSessionStarted);
+          //navigator.xr.requestSession('inline').then(onSessionStarted);
         }
       }
 
@@ -116,6 +138,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             });
       }
 
+/
       function initGL() {
         if (gl)
           return;
@@ -137,6 +160,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         scene.setRenderer(renderer);
       }
 
+
+
       function onSessionStarted(session) {
         session.addEventListener('end', onSessionEnded);
 
@@ -147,10 +172,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         }
 
         initGL();
+        //didin't do the hit-test gl way
 
         session.updateRenderState({ baseLayer: new XRWebGLLayer(session, gl) });
 
-        let refSpaceType = session.isImmersive ? 'local' : 'viewer';
+        /**let refSpaceType = session.isImmersive ? 'local' : 'viewer';
         session.requestReferenceSpace(refSpaceType).then((refSpace) => {
           if (session.isImmersive) {
             xrImmersiveRefSpace = refSpace;
@@ -158,7 +184,21 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
             inlineViewerHelper = new InlineViewerHelper(gl.canvas, refSpace);
           }
           session.requestAnimationFrame(onXRFrame);
+        });**/
+        
+        session.requestReferenceSpace('viewer').then((refSpace) => {
+          xrViewerSpace = refSpace;
+          session.requestHitTestSource({ space: xrViewerSpace }).then((hitTestSource) => {
+            xrHitTestSource = hitTestSource;
+          });
         });
+
+        session.requestReferenceSpace('local').then((refSpace) => {
+          xrRefSpace = refSpace;
+
+          session.requestAnimationFrame(onXRFrame);
+        });
+        
       }
 
       function onEndSession(session) {
@@ -166,11 +206,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       }
 
       function onSessionEnded(event) {
-        if (event.session.isImmersive) {
+        //if (event.session.isImmersive) {
           xrButton.setSession(null);
           // Turn the background back on when we go back to the inlive view.
-          skybox.visible = true;
-        }
+          //skybox.visible = true;
+        //}
       }
 
       // Called every time a XRSession requests that a new frame be drawn.
@@ -180,6 +220,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                          xrImmersiveRefSpace :
                          inlineViewerHelper.referenceSpace;
         let pose = frame.getViewerPose(refSpace);
+			
+	
+    
+
+    
+
+
 
         scene.startFrame();
 
