@@ -32,6 +32,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <title>NCO - Augmented Reality</title>
   </head>
   <body>
+      <div id="overlay">
+
     <header>
       <details open>
         <summary>NCO - Augmented Reality</summary>
@@ -39,6 +41,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           This sample demonstrates the use of hit testing to place virtual objects on real-world surfaces.
           <a class="back" href="./">Back</a>
         </p-->
+         <button id="green-button" class="barebones-button" disabled>
+            Green button
+          </button>
+           <button id="red-button" class="barebones-button" disabled>
+            Red button
+          </button>
       </details>
     </header>
     <script type="module">
@@ -53,11 +61,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
       // XR globals.
       let xrButton = null;
-      let pathButton = null;
-      let mapButton = null;
+      let xrSession = null;
       let xrRefSpace = null;
       let xrViewerSpace = null;
       let xrHitTestSource = null;
+      let greenButton = document.getElementById("green-button");
+      let redButton = document.getElementById("red-button");
+
 
       // WebGL scene globals.
       let gl = null;
@@ -105,8 +115,36 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                       .then((supported) => {
             xrButton.enabled = supported;
           });
+          greenButton.addEventListener("click", onGreenButtonClicked);
+          redButton.addEventListener("click", onRedButtonClicked);
+
         }
       }
+
+ 	function onGreenButtonClicked() {
+        if (!xrSession) {
+          // Ask for an optional DOM Overlay, see https://immersive-web.github.io/dom-overlays/
+          navigator.xr
+            .requestSession("immersive-ar", {
+              optionalFeatures: ["dom-overlay"],
+              domOverlay: { root: document.getElementById("overlay") }
+            })
+            .then(onSessionStarted, onRequestSessionError);
+        }
+      }
+      
+      function onRedButtonClicked() {
+        if (!xrSession) {
+          // Ask for an optional DOM Overlay, see https://immersive-web.github.io/dom-overlays/
+          navigator.xr
+            .requestSession("immersive-ar", {
+              optionalFeatures: ["dom-overlay"],
+              domOverlay: { root: document.getElementById("overlay") }
+            })
+            .then(onSessionStarted, onRequestSessionError);
+        } 
+      }
+
 
       function onRequestSession() {
         return navigator.xr.requestSession('immersive-ar', {requiredFeatures: ['local', 'hit-test']})
@@ -117,28 +155,15 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       }
 
       function onSessionStarted(session) {
+        xrSession = session;
+       
+        greenButton.innerHTML = "Green AR";
+        redButton.innerHTML = "Red AR";
+
+
+       
         session.addEventListener('end', onSessionEnded);
         session.addEventListener('select', onSelect);
-
-
-		pathButton = new WebXRButton({
-			textEnterXRTitle: "Path",
-          /**onRequestSession: onRequestSession,
-          onEndSession: onEndSession,
-          textEnterXRTitle: "START AR",
-          textXRNotFoundTitle: "AR NOT FOUND",
-          textExitXRTitle: "EXIT  AR",**/
-        });
-        document.querySelector('header').appendChild(pathButton.domElement);
-      	mapButton = new WebXRButton({
-          /**onRequestSession: onRequestSession,
-          onEndSession: onEndSession,
-          textEnterXRTitle: "START AR",
-          textXRNotFoundTitle: "AR NOT FOUND",
-          textExitXRTitle: "EXIT  AR",**/
-        });
-        document.querySelector('header').appendChild(mapButton.domElement);
-
 
 
         if (!gl) {
@@ -162,6 +187,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           session.requestHitTestSource({ space: xrViewerSpace }).then((hitTestSource) => {
             xrHitTestSource = hitTestSource;
           });
+           
         });
 
         session.requestReferenceSpace('local').then((refSpace) => {
