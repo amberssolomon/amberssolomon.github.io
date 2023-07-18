@@ -121,6 +121,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           });
           //greenButton.addEventListener("click", onGreenButtonClicked);
           //redButton.addEventListener("click", onRedButtonClicked);
+          
+          greenButton.addEventListener('click', function () { 
+          	navigator.xr.requestSession("immersive-ar", {
+          	
+          	window.open("hit-test2.html");
+          	})
+          	
+          	
+          	});
+
+
 
         }
       }
