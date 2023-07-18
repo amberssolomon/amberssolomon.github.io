@@ -32,7 +32,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <title>NCO - Augmented Reality</title>
   </head>
   <body>
-      <div id="overlay">
 
     <header>
       <details open>
@@ -41,14 +40,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           This sample demonstrates the use of hit testing to place virtual objects on real-world surfaces.
           <a class="back" href="./">Back</a>
         </p-->
-         <button id="green-button" class="barebones-button" hidden="hidden">
+        
+      </details>
+    </header>
+    
+          <div id="overlay">
+ <button id="green-button" class="barebones-button" hidden="hidden">
             Green button
           </button>
            <button id="red-button" class="barebones-button" >
             Red button
           </button>
-      </details>
-    </header>
         </div>
 
     <script type="module">
@@ -117,8 +119,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                       .then((supported) => {
             xrButton.enabled = supported;
           });
-          greenButton.addEventListener("click", onGreenButtonClicked);
-          redButton.addEventListener("click", onRedButtonClicked);
+          //greenButton.addEventListener("click", onGreenButtonClicked);
+          //redButton.addEventListener("click", onRedButtonClicked);
 
         }
       }
@@ -140,7 +142,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         //window.open("hit-test2.html");
        // }
         
-        
+        //window.location.href = "hit-test2.html";
         
         
       }
