@@ -126,13 +126,23 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  	function onGreenButtonClicked() {
         if (!xrSession) {
           // Ask for an optional DOM Overlay, see https://immersive-web.github.io/dom-overlays/
-          navigator.xr
+          /**navigator.xr
             .requestSession("immersive-ar", {
               optionalFeatures: ["dom-overlay"],
               domOverlay: { root: document.getElementById("overlay") }
             })
             .then(onSessionStarted, onRequestSessionError);
+        }**/
+        
+        	xrHitTestSource.cancel();
+        xrHitTestSource = null;
+        session.end();
+        window.open("hit-test2.html");
         }
+        
+        
+        
+        
       }
       
       function onRedButtonClicked() {
