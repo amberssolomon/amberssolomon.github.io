@@ -84,7 +84,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       scene.addNode(arObject);
 
       let flower = new Gltf2Node({url: 'jump_domi1.gltf'});
-      flower.scale = [1, 1, 1];
+      flower.scale = [0.8, 0.8, 0.8];
+      flower.rotation = [0, 0, Math.PI/2, 0];
       //flower.rotation = [0, 0, Math.PI/2];
       arObject.addNode(flower);
 
@@ -95,7 +96,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       // Having a really simple drop shadow underneath an object helps ground
       // it in the world without adding much complexity.
       let shadow = new DropShadowNode();
-      vec3.set(shadow.scale, 0.15, 0.15, 0.15);
+      vec3.set(shadow.scale, 0.5, 0.5, 0.5);
       arObject.addNode(shadow);
 
       const MAX_FLOWERS = 1;
