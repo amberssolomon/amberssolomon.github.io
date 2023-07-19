@@ -1,0 +1,1518 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "THREE.GLTFExporter"
+  },
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "children": [
+        16
+      ],
+      "matrix": [
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "matrix": [
+        0.9999998104796778,
+        -4.1611679379993655e-16,
+        -0.0006156627394484572,
+        0,
+        -0.0006156627394484573,
+        8.881784197001252e-16,
+        -0.9999998104796779,
+        0,
+        4.167131049948038e-16,
+        0.9999999999999999,
+        8.881784197001252e-16,
+        0,
+        -0.38640862221740235,
+        -49.00000000000001,
+        -485.4761512825411,
+        1
+      ],
+      "name": "Triangle 13",
+      "mesh": 0
+    },
+    {
+      "matrix": [
+        0.9999998104796778,
+        -4.1611679379993655e-16,
+        -0.0006156627394484572,
+        0,
+        -0.0006156627394484573,
+        8.881784197001252e-16,
+        -0.9999998104796779,
+        0,
+        4.167131049948038e-16,
+        0.9999999999999999,
+        8.881784197001252e-16,
+        0,
+        -0.3028934263920746,
+        -49.000000000000014,
+        -349.82529141027624,
+        1
+      ],
+      "name": "Triangle 13",
+      "mesh": 1
+    },
+    {
+      "matrix": [
+        0.9999998104796778,
+        -4.1611679379993655e-16,
+        -0.0006156627394484572,
+        0,
+        -0.0006156627394484573,
+        8.881784197001252e-16,
+        -0.9999998104796779,
+        0,
+        4.167131049948038e-16,
+        0.9999999999999999,
+        8.881784197001252e-16,
+        0,
+        -0.21526588654222678,
+        -49.000000000000014,
+        -207.49489259332748,
+        1
+      ],
+      "name": "Triangle 13",
+      "mesh": 2
+    },
+    {
+      "matrix": [
+        0.00014835531508439198,
+        -4.440892098500625e-16,
+        -0.9999999889953501,
+        0,
+        -0.9999999889953503,
+        4.4408920985006257e-16,
+        -0.00014835531508433636,
+        0,
+        4.440892098500627e-16,
+        0.9999999999999999,
+        -4.440892098500626e-16,
+        0,
+        -464.45932683015326,
+        -36.00000000000003,
+        -2.313022122886764,
+        1
+      ],
+      "name": "Triangle 10",
+      "mesh": 3
+    },
+    {
+      "matrix": [
+        0.00014835531508439198,
+        -4.440892098500625e-16,
+        -0.9999999889953501,
+        0,
+        -0.9999999889953503,
+        4.4408920985006257e-16,
+        -0.00014835531508433636,
+        0,
+        4.440892098500627e-16,
+        0.9999999999999999,
+        -4.440892098500626e-16,
+        0,
+        -328.8084427420795,
+        -36.00000000000003,
+        -2.2928975930149136,
+        1
+      ],
+      "name": "Triangle 10",
+      "mesh": 4
+    },
+    {
+      "matrix": [
+        0.00014835531508439198,
+        -4.440892098500625e-16,
+        -0.9999999889953501,
+        0,
+        -0.9999999889953503,
+        4.4408920985006257e-16,
+        -0.00014835531508433636,
+        0,
+        4.440892098500627e-16,
+        0.9999999999999999,
+        -4.440892098500626e-16,
+        0,
+        -186.47801851691906,
+        -36.00000000000003,
+        -2.271782117850762,
+        1
+      ],
+      "name": "Triangle 10",
+      "mesh": 5
+    },
+    {
+      "matrix": [
+        -0.99999990681919,
+        -2.2180065943622207e-16,
+        0.00043169620206064536,
+        0,
+        0.0004316962020606453,
+        5.551115123125783e-16,
+        0.9999999068191902,
+        0,
+        -2.2199039481640703e-16,
+        0.9999999999999999,
+        -4.440892098500626e-16,
+        0,
+        -1.6477215683776194,
+        -23.00000000000003,
+        542.0621793171197,
+        1
+      ],
+      "name": "Triangle 7",
+      "mesh": 6
+    },
+    {
+      "matrix": [
+        -0.99999990681919,
+        -2.2180065943622207e-16,
+        0.00043169620206064536,
+        0,
+        0.0004316962020606453,
+        5.551115123125783e-16,
+        0.9999999068191902,
+        0,
+        -2.2199039481640703e-16,
+        0.9999999999999999,
+        -4.440892098500626e-16,
+        0,
+        -1.7062815404890443,
+        -23.00000000000003,
+        406.41130637631477,
+        1
+      ],
+      "name": "Triangle 7",
+      "mesh": 7
+    },
+    {
+      "matrix": [
+        -0.99999990681919,
+        -2.2180065943622207e-16,
+        0.00043169620206064536,
+        0,
+        0.0004316962020606453,
+        5.551115123125783e-16,
+        0.9999999068191902,
+        0,
+        -2.2199039481640703e-16,
+        0.9999999999999999,
+        -4.440892098500626e-16,
+        0,
+        -1.7677250447409278,
+        -23.00000000000003,
+        264.08089384732216,
+        1
+      ],
+      "name": "Triangle 7",
+      "mesh": 8
+    },
+    {
+      "matrix": [
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        1,
+        0,
+        1,
+        0,
+        -2.220446049250313e-16,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        458.51281402733593,
+        -23.00000000000003,
+        -0.1438532363827747,
+        1
+      ],
+      "name": "Triangle 5",
+      "mesh": 9
+    },
+    {
+      "matrix": [
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        1,
+        0,
+        1,
+        0,
+        -2.220446049250313e-16,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        316.182388235879,
+        -23.00000000000003,
+        -0.14385323638274272,
+        1
+      ],
+      "name": "Triangle 4",
+      "mesh": 10
+    },
+    {
+      "matrix": [
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        1,
+        0,
+        1,
+        0,
+        -2.220446049250313e-16,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        180.53150265501472,
+        -23.00000000000003,
+        -0.1438532363827143,
+        1
+      ],
+      "name": "Triangle 4",
+      "mesh": 11
+    },
+    {
+      "matrix": [
+        0.5883484054145521,
+        0.39223227027636803,
+        -0.7071067811865475,
+        0,
+        -0.554700196225229,
+        0.8320502943378437,
+        0,
+        0,
+        0.588348405414552,
+        0.392232270276368,
+        0.7071067811865476,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Directional Light",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      }
+    },
+    {
+      "matrix": [
+        -0.9975122358453881,
+        0,
+        0.07049354111360542,
+        0,
+        0.07023197462773609,
+        -0.0860653117537824,
+        0.9938109638420245,
+        0,
+        0.006067048592570512,
+        0.9962894971406275,
+        0.08585120155624537,
+        0,
+        103.12819442227462,
+        995.8951840460036,
+        93.19327683157879,
+        1
+      ],
+      "camera": 0
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "name": "Default Ambient Light"
+    },
+    {
+      "name": "Scene 1",
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 360,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 360,
+      "byteLength": 360,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 720,
+      "byteLength": 240,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 960,
+      "byteLength": 240,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1200,
+      "byteLength": 360,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1560,
+      "byteLength": 360,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1920,
+      "byteLength": 240,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2160,
+      "byteLength": 240,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2400,
+      "byteLength": 360,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 2760,
+      "byteLength": 360,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3120,
+      "byteLength": 240,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 3360,
+      "byteLength": 240,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3600,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        100.2542724609375,
+        50,
+        26
+      ],
+      "min": [
+        -100.2542724609375,
+        -50,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        0.706208348274231,
+        0.7080040574073792,
+        1
+      ],
+      "min": [
+        -0.706208348274231,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 60,
+      "max": [
+        29
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        100.2542724609375,
+        50,
+        26
+      ],
+      "min": [
+        -100.2542724609375,
+        -50,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        0.706208348274231,
+        0.7080040574073792,
+        1
+      ],
+      "min": [
+        -0.706208348274231,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5125,
+      "count": 60,
+      "max": [
+        29
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        100.2542724609375,
+        50,
+        26
+      ],
+      "min": [
+        -100.2542724609375,
+        -50,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        0.706208348274231,
+        0.7080040574073792,
+        1
+      ],
+      "min": [
+        -0.706208348274231,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 10,
+      "componentType": 5126,
+      "count": 30,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 11,
+      "componentType": 5125,
+      "count": 60,
+      "max": [
+        29
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5906188409113381,
+          0.20863687013464577,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5906188409113381,
+          0.20863687013464577,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5875823812541362,
+          0.20777539977163723,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5906188409113381,
+          0.20863687013464577,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5906188409113381,
+          0.20863687013464577,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5875823812541362,
+          0.20777539977163723,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0033465357620980074,
+          0.45641102317066595,
+          0.015208514418949472,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0033465357620980074,
+          0.45641102317066595,
+          0.015208514418949472,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.0032296637591895682,
+          0.45565528208205974,
+          0.014924817058920493,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5457244613615395,
+          0.0009105809505882353,
+          0.026241221889696346,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5457244613615395,
+          0.0009105809505882353,
+          0.026241221889696346,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5457244613615395,
+          0.0009105809505882353,
+          0.026241221889696346,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.995
+      },
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 6,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 3,
+          "material": 0
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 5,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 5,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 11,
+          "material": 2
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 6,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 3,
+          "material": 3
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 5,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 7,
+          "material": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 5,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 11,
+          "material": 5
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 6,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 3,
+          "material": 6
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 5,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 7,
+          "material": 7
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 8,
+            "NORMAL": 9,
+            "TEXCOORD_0": 10
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 5,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 11,
+          "material": 8
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 6,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 3,
+          "material": 9
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 6,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 3,
+          "material": 10
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extras": {
+            "shape": {
+              "points": [
+                0,
+                50,
+                0,
+                50,
+                0,
+                50,
+                0,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                100.2542703095096,
+                -50,
+                0,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                -100.2542703095096,
+                -50,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "parameters": {
+              "width": 200.5085406190192,
+              "depth": 26,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "extrudeBevelSize": 5,
+              "extrudeBevelSegments": 1,
+              "isRect": false,
+              "height": 100,
+              "type": "TriangleGeometry"
+            },
+            "type": "TriangleGeometry"
+          },
+          "indices": 7,
+          "material": 11
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Directional Light",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "intensity": 0.7,
+          "type": "directional"
+        }
+      ]
+    }
+  },
+  "cameras": [
+    {
+      "type": "orthographic",
+      "orthographic": {
+        "xmag": 9.165000000000001,
+        "ymag": 5.25,
+        "zfar": 100000,
+        "znear": 0
+      }
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ]
+}
