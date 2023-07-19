@@ -13,48 +13,6 @@
  * limitations under the License.
  */
 
-const scene = new THREE.Scene();
-
-const loader = new THREE.GLTFLoader()
-loader.load("jump_domi1.gltf", (object) => {
-	//object.scene.position.y = -1.5;
-	object.scene.position.x = 0;
-	object.scene.position.y = 0;
-	object.scene.position.z = -20;
-	//object.scene.position.x = 0;
-	//object.scene.scale.multiplyScalar(20);
-	scene.add(object.scene);
-
-});
-
-
-/**loader.load(
-    "tester.gltf",
-    function (gltf) {
-        // gltf.scene.traverse(function (child) {
-        //     if ((child as THREE.Mesh).isMesh) {
-        //         const m = (child as THREE.Mesh)
-        //         m.receiveShadow = true
-        //         m.castShadow = true
-        //     }
-        //     if (((child as THREE.Light)).isLight) {
-        //         const l = (child as THREE.SpotLight)
-        //         l.castShadow = true
-        //         l.shadow.bias = -.003
-        //         l.shadow.mapSize.width = 2048
-        //         l.shadow.mapSize.height = 2048
-        //     }
-        // })
-        scene.add(gltf.scene)
-    },
-    (xhr) => {
-        console.log((xhr.loaded / xhr.total) * 100 + '% loaded')
-    },
-    (error) => {
-        console.log(error)
-    }
-)**/
-
 window.gltfLoader = new THREE.GLTFLoader();
 /**
  * The Reticle class creates an object that repeatedly calls
@@ -74,13 +32,12 @@ class Reticle extends THREE.Object3D {
   }
 }
 
-/**
-window.gltfLoader.load("tester.gltf", function(gltf) {
-  //const flower = gltf.scene.children.find(c => c.name === 'sunflower')
-  //flower.castShadow = true;
+window.gltfLoader.load("https://immersive-web.github.io/webxr-samples/media/gltf/sunflower/sunflower.gltf", function(gltf) {
+  const flower = gltf.scene.children.find(c => c.name === 'sunflower')
+  flower.castShadow = true;
   window.sunflower = gltf.scene;
 });
-**/
+
 
 window.DemoUtils = {
   /**
@@ -90,6 +47,7 @@ window.DemoUtils = {
    * @return {THREE.Scene}
    */
   createLitScene() {
+    const scene = new THREE.Scene();
 
     // The materials will render as a black mesh
     // without lights in our scenes. Let's add an ambient light
@@ -134,6 +92,7 @@ window.DemoUtils = {
    * @return {THREE.Scene}
    */
   createCubeScene() {
+    const scene = new THREE.Scene();
 
     const materials = [
       new THREE.MeshBasicMaterial({ color: 0xff0000 }),
@@ -160,109 +119,6 @@ window.DemoUtils = {
 
     return scene;
   },
-  
-  
-  createArrowScene() {
-    //Create renderer + Canvas    
-
-    //Create Sphere + Cube
-    const sphereRadius = 1;
-    const sphereGeometry = new THREE.SphereBufferGeometry(
-        sphereRadius,
-        16, //Width segments
-        16 //Height segments
-    );
-    const sphereMaterial = new THREE.MeshLambertMaterial({
-        color: 0xFF0000 //Red
-    });
-    const sphereMesh = new THREE.Mesh(sphereGeometry, sphereMaterial);
-    const cubeGeometry = new THREE.BoxBufferGeometry(
-        1.5 * sphereRadius, //Width
-        1.5 * sphereRadius, //Height
-        1.5 * sphereRadius //Depth
-    );
-    const cubeMaterial = new THREE.MeshLambertMaterial({
-        color: 0x00FF00 //Green
-    });
-    const cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
-    
-    //Group shapes together and add group to the scene
-    const shapes = new THREE.Object3D();
-    shapes.add(sphereMesh);
-    shapes.add(cubeMesh);
-    shapes.position.setY(1.7); //Place at eye level
-    shapes.position.setZ(-10); //Move shape forward so we can see it
-    scene.add(shapes);
-    
-    const materials = [
-      new THREE.MeshBasicMaterial({ color: 0xff0000 }),
-      new THREE.MeshBasicMaterial({ color: 0x0000ff }),
-      new THREE.MeshBasicMaterial({ color: 0x00ff00 }),
-      new THREE.MeshBasicMaterial({ color: 0xff00ff }),
-      new THREE.MeshBasicMaterial({ color: 0x00ffff }),
-      new THREE.MeshBasicMaterial({ color: 0xffff00 })
-    ];
-    
-    const box = new THREE.Mesh(new THREE.BoxBufferGeometry(0.2, 0.2, 0.2), materials);
-	const shapes2 = new THREE.Object3D();
-    shapes2.add(box);
-    scene.add(shapes2);
-    
-    
-    
-    
-    //Add light to the scene
-    const light = new THREE.PointLight();
-    light.position.setY(2);
-    scene.add(light);
-    
-    return scene;
-  },
-  
-  createSunflowerScene() {
-  	
-
-/**
-  	if (window.sunflower) {
-      const clone = window.sunflower.clone();
-      scene.add(clone)
-    }
-    **/
-    
-     //Add light to the scene
-    const light = new THREE.PointLight();
-    light.position.setY(2);
-    scene.add(light);
-    
-    return scene;
-  
-  },
-  /**
-  createMapScene() {
-  	
-
-	const scene2 = new THREE.Scene();
-
-	const loader2 = new THREE.GLTFLoader()
-	loader2.load("tester.gltf", (object) => {
-	//object.scene.position.y = -1.5;
-	object.scene.position.x = 20;
-	//object.scene.position.y = 0;
-	object.scene.position.z = -20;
-	object.scene.scale.multiplyScalar(30);
-	scene2.add(object.scene);
-
-	});
-    
-     //Add light to the scene
-    const light = new THREE.PointLight();
-    light.position.setY(2);
-    scene2.add(light);
-    
-    return scene2;
-  
-  },
-  **/
 };
 
 /**
