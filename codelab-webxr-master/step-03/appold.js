@@ -21,6 +21,8 @@
   const isArSessionSupported = navigator.xr && navigator.xr.isSessionSupported && await navigator.xr.isSessionSupported("immersive-ar");
   if (isArSessionSupported) {
     document.getElementById("enter-ar").addEventListener("click", window.app.activateXR)
+   // document.getElementById("btnBlue").addEventListener("click", () => window.app.activateXR)
+  //  document.getElementById("btnGreen").addEventListener("click", () => window.app.setupFourJs)
   } else {
     onNoXRDevice();
   }
@@ -71,6 +73,8 @@ class App {
   async onSessionStarted() {
     // Add the `ar` class to our body, which will hide our 2D components
     document.body.classList.add('ar');
+    document.body.appendChild('ar');
+
 
     // To help with working with 3D on the web, we'll use three.js.
     this.setupThreeJs();
@@ -119,6 +123,7 @@ class App {
    * Initialize three.js specific rendering code, including a WebGLRenderer,
    * a demo scene, and a camera for viewing the 3D content.
    */
+  
   setupThreeJs() {
     // To help with working with 3D on the web, we'll use three.js.
     // Set up the WebGLRenderer, which handles rendering to our session's base layer.
@@ -131,7 +136,7 @@ class App {
     this.renderer.autoClear = false;
 
     // Initialize our demo scene.
-    this.scene = DemoUtils.createCubeScene();
+    this.scene = DemoUtils.createSunflowerScene();
 
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt
@@ -139,6 +144,28 @@ class App {
     this.camera = new THREE.PerspectiveCamera();
     this.camera.matrixAutoUpdate = false;
   }
+  /**
+  setupFourJs() {
+    // To help with working with 3D on the web, we'll use three.js.
+    // Set up the WebGLRenderer, which handles rendering to our session's base layer.
+    this.renderer = new THREE.WebGLRenderer({
+      alpha: true,
+      preserveDrawingBuffer: true,
+      canvas: this.canvas,
+      context: this.gl
+    });
+    this.renderer.autoClear = false;
+
+    // Initialize our demo scene.
+    this.scene = DemoUtils.createMapScene();
+
+    // We'll update the camera matrices directly from API, so
+    // disable matrix auto updates so three.js doesn't attempt
+    // to handle the matrices independently.
+    this.camera = new THREE.PerspectiveCamera();
+    this.camera.matrixAutoUpdate = false;
+  }**/
 };
+
 
 window.app = new App();
