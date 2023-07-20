@@ -141,8 +141,13 @@ class App {
     // We'll update the camera matrices directly from API, so
     // disable matrix auto updates so three.js doesn't attempt
     // to handle the matrices independently.
-    this.camera = new THREE.PerspectiveCamera();
-    this.camera.matrixAutoUpdate = false;
+    //this.camera = new THREE.PerspectiveCamera();
+    this.camera = new THREE.PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 1, 20000 );
+	this.camera.position.set( 1, 1, 20 );
+    //this.camera.matrixAutoUpdate = false;
+    
+   // var controls = new THREE.OrbitControls( camera, renderer.domElement ); 
+
   }
   /**
   setupFourJs() {

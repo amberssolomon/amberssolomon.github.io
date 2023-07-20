@@ -231,9 +231,17 @@ window.DemoUtils = {
     **/
     
      //Add light to the scene
-    const light = new THREE.PointLight();
+    /**const light = new THREE.PointLight();
     light.position.setY(2);
-    scene.add(light);
+    scene.add(light);**/
+    
+    var ambientLight = new THREE.AmbientLight( 0xcccccc );
+	scene.add( ambientLight );
+			
+	var directionalLight = new THREE.DirectionalLight( 0xffffff );
+	directionalLight.position.set( 0, 1, 1 ).normalize();
+	scene.add( directionalLight );				
+
     
     return scene;
   
