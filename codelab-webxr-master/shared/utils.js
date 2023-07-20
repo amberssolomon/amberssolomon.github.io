@@ -18,9 +18,10 @@ const scene = new THREE.Scene();
 const loader = new THREE.GLTFLoader()
 loader.load("southern.gltf", (object) => {
 	//object.scene.position.y = -1.5;
+	object.scene.scale.set( 2, 2, 2 );
 	object.scene.position.x = 0;
 	object.scene.position.y = 0;
-	object.scene.position.z = -20;
+	object.scene.position.z = 0;
 	//object.scene.position.x = 0;
 	//object.scene.scale.multiplyScalar(20);
 	scene.add(object.scene);
