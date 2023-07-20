@@ -21,7 +21,7 @@ loader.load("tester.gltf", (object) => {
 	object.scene.scale.set( 2, 2, 2 );
 	object.scene.position.x = 0;
 	object.scene.position.y = 0;
-	object.scene.position.z = -20;
+	object.scene.position.z = 30;
 	//object.scene.position.x = 0;
 	//object.scene.scale.multiplyScalar(20);
 	scene.add(object.scene);
