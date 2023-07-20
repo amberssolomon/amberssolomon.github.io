@@ -1,0 +1,459 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "THREE.GLTFExporter"
+  },
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        750.041049082172,
+        726.024662293876,
+        2830.084711973283,
+        1
+      ],
+      "name": "Group 4"
+    },
+    {
+      "matrix": [
+        0.9975758213336218,
+        -0.012481187743755272,
+        0.06845948176140934,
+        0,
+        0.06866051873279606,
+        0.016460573480719613,
+        -0.9975042770273083,
+        0,
+        0.011323155826791042,
+        0.9997866119692332,
+        0.01727763493453891,
+        0,
+        -844.2455255491263,
+        27.601740310356718,
+        412.1389666889781,
+        1
+      ],
+      "name": "Campus Development Maps.png",
+      "mesh": 0
+    },
+    {
+      "matrix": [
+        0.5883484054145521,
+        0.39223227027636803,
+        -0.7071067811865475,
+        0,
+        -0.554700196225229,
+        0.8320502943378437,
+        0,
+        0,
+        0.588348405414552,
+        0.392232270276368,
+        0.7071067811865476,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Directional Light",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      }
+    },
+    {
+      "matrix": [
+        0.9821421088522532,
+        2.9561212287060323e-8,
+        0.18814058046909488,
+        0,
+        0.02388358018544261,
+        0.9919096874133418,
+        -0.12467857319159562,
+        0,
+        -0.18661846804851434,
+        0.12694554744285305,
+        0.9741962714810912,
+        0,
+        -1477.6710479763685,
+        2114.11353874359,
+        7867.605730645005,
+        1
+      ],
+      "camera": 0
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "name": "Default Ambient Light"
+    },
+    {
+      "name": "Scene",
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 624,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 624,
+      "byteLength": 624,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1248,
+      "byteLength": 416,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1664,
+      "byteLength": 600,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 2264,
+      "uri": "data:application/octet-stream;base64,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DQAAAAsAAAAMAAAADgAAAA0AAAAPAAAADgAAAAwAAAAQAAAADgAAAA8AAAAQAAAAEQAAAA4AAAASAAAAEQAAABAAAAASAAAAEwAAABEAAAAUAAAAEwAAABIAAAAUAAAAFQAAABMAAAAUAAAAFgAAABUAAAAXAAAAFgAAABQAAAAYAAAAFgAAABcAAAAYAAAAGQAAABYAAAAaAAAAGQAAABgAAAAaAAAAGwAAABkAAAAaAAAAHAAAABsAAAAdAAAAHAAAABoAAAAeAAAAHAAAAB0AAAAeAAAAHwAAABwAAAAgAAAAHwAAAB4AAAAgAAAAIQAAAB8AAAAiAAAAIQAAACAAAAAiAAAAIwAAACEAAAAiAAAAJAAAACMAAAAlAAAAJAAAACIAAAAmAAAAJAAAACUAAAAmAAAAJwAAACQAAAAoAAAAJwAAACYAAAAoAAAAKQAAACcAAAAoAAAAKgAAACkAAAArAAAAKgAAACgAAAAsAAAAKgAAACsAAAAsAAAALQAAACoAAAAuAAAALQAAACwAAAAuAAAALwAAAC0AAAAwAAAALwAAAC4AAAAwAAAAMQAAAC8AAAAyAAAAMQAAADAAAAAxAAAAMgAAADMAAAA="
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 52,
+      "max": [
+        2322.648193359375,
+        2830.630615234375,
+        0
+      ],
+      "min": [
+        -2322.648193359375,
+        -2830.630615234375,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 52,
+      "max": [
+        0,
+        0,
+        1
+      ],
+      "min": [
+        0,
+        0,
+        1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 52,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 150,
+      "max": [
+        51
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "parameters": {
+              "width": 4645.29631871638,
+              "subdivisions": 12,
+              "roundness": 200,
+              "extrudeBevelSize": 53,
+              "extrudeBevelSegments": 1,
+              "windingRule": 0,
+              "height": 5661.261289691376,
+              "type": "VectorGeometry",
+              "cornerRadius": [
+                0,
+                0,
+                0,
+                0
+              ],
+              "cornerType": 0,
+              "depth": 0,
+              "shape": {
+                "isClosed": true,
+                "points": [
+                  {
+                    "id": "0ae41f85-29b8-4b3f-8d1a-6fbc27ecf197",
+                    "fi": 0,
+                    "data": {
+                      "position": [
+                        -2322.64815935819,
+                        2830.630644845688
+                      ],
+                      "controlNext": {
+                        "position": [
+                          -2322.64815935819,
+                          2830.630644845688
+                        ]
+                      },
+                      "controlPrevious": {
+                        "position": [
+                          -2322.64815935819,
+                          2830.630644845688
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 200
+                    }
+                  },
+                  {
+                    "id": "39e04bfe-ae59-4dda-a436-a7161d6832c2",
+                    "fi": 1,
+                    "data": {
+                      "position": [
+                        2322.64815935819,
+                        2830.630644845688
+                      ],
+                      "controlNext": {
+                        "position": [
+                          2322.64815935819,
+                          2830.630644845688
+                        ]
+                      },
+                      "controlPrevious": {
+                        "position": [
+                          2322.64815935819,
+                          2830.630644845688
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 200
+                    }
+                  },
+                  {
+                    "id": "af4e8e04-75da-4175-849e-aa5344d9b284",
+                    "fi": 2,
+                    "data": {
+                      "position": [
+                        2322.64815935819,
+                        -2830.630644845688
+                      ],
+                      "controlNext": {
+                        "position": [
+                          2322.64815935819,
+                          -2830.630644845688
+                        ]
+                      },
+                      "controlPrevious": {
+                        "position": [
+                          2322.64815935819,
+                          -2830.630644845688
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 200
+                    }
+                  },
+                  {
+                    "id": "b27fe59b-27ee-4fd3-abab-99de68c0a439",
+                    "fi": 3,
+                    "data": {
+                      "position": [
+                        -2322.64815935819,
+                        -2830.630644845688
+                      ],
+                      "controlNext": {
+                        "position": [
+                          -2322.64815935819,
+                          -2830.630644845688
+                        ]
+                      },
+                      "controlPrevious": {
+                        "position": [
+                          -2322.64815935819,
+                          -2830.630644845688
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 200
+                    }
+                  }
+                ],
+                "roundness": 200,
+                "shapeHoles": []
+              }
+            },
+            "shape": {
+              "points": [
+                -2322.64815935819,
+                2830.630644845688,
+                -2322.64815935819,
+                2830.630644845688,
+                -2322.64815935819,
+                2830.630644845688,
+                200,
+                2322.64815935819,
+                2830.630644845688,
+                2322.64815935819,
+                2830.630644845688,
+                2322.64815935819,
+                2830.630644845688,
+                200,
+                2322.64815935819,
+                -2830.630644845688,
+                2322.64815935819,
+                -2830.630644845688,
+                2322.64815935819,
+                -2830.630644845688,
+                200,
+                -2322.64815935819,
+                -2830.630644845688,
+                -2322.64815935819,
+                -2830.630644845688,
+                -2322.64815935819,
+                -2830.630644845688,
+                200
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 200
+            },
+            "type": "VectorGeometry"
+          },
+          "indices": 3
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Directional Light",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "intensity": 0.7,
+          "type": "directional"
+        }
+      ]
+    }
+  },
+  "cameras": [
+    {
+      "type": "perspective",
+      "perspective": {
+        "aspectRatio": 1.7457142857142858,
+        "yfov": 0.7853981633974483,
+        "zfar": 100000,
+        "znear": 5
+      }
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ]
+}
