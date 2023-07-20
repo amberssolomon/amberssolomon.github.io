@@ -146,7 +146,7 @@ class App {
 	this.camera.position.set( 1, 1, 20 );
     //this.camera.matrixAutoUpdate = false;
     
-   // var controls = new THREE.OrbitControls( camera, renderer.domElement ); 
+   var controls = new THREE.OrbitControls( camera, renderer.domElement ); 
 
   }
   /**

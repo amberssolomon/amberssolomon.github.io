@@ -16,7 +16,7 @@
 const scene = new THREE.Scene();
 
 const loader = new THREE.GLTFLoader()
-loader.load("southern.gltf", (object) => {
+loader.load("tester.gltf", (object) => {
 	//object.scene.position.y = -1.5;
 	object.scene.scale.set( 2, 2, 2 );
 	object.scene.position.x = 0;
