@@ -25,8 +25,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
     <meta name='mobile-web-app-capable' content='yes'>
     <meta name='apple-mobile-web-app-capable' content='yes'>
-    <!--link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
-    <link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'-->
+    <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'>
     <link rel='stylesheet' href='css/common.css'>
 
     <title>Immersive AR Session</title>
@@ -34,21 +34,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   <body>
     <header>
       <details open>
-         <summary>NCO - Augmented Reality</summary>
-        <!--p>
-          This sample demonstrates the use of hit testing to place virtual objects on real-world surfaces.
+        <summary>Immersive AR Session</summary>
+        <p>
+          This sample demonstrates how to use an 'immersive-ar' XRSession to
+          present a simple WebGL scene to a transparent or passthrough XR
+          device. The logic is largely the same as the corresponding VR sample,
+          with the primary difference being that no background is rendered and
+          the model is scaled down for easier viewing in a real-world space.
           <a class="back" href="./">Back</a>
-        </p-->
-        
+        </p>
       </details>
     </header>
-    
-          <div id="overlay">
- <button id="green-button" class="barebones-button" hidden="hidden">
-			Pathway
-          </button>
-        </div>
-    
     <script type="module">
       import {WebXRButton} from './js/util/webxr-button.js';
       import {Scene} from './js/render/scenes/scene.js';
@@ -69,25 +65,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let xrButton = null;
       let xrImmersiveRefSpace = null;
       let inlineViewerHelper = null;
-      let xrViewerSpace = null;
-
-      let greenButton = document.getElementById("green-button");
-
 
       // WebGL scene globals.
       let gl = null;
       let renderer = null;
       let scene = new Scene();
-      //let solarSystem = new Gltf2Node({url: 'media/gltf/scene/scene.gltf'});
-      //let solarSystem = new Gltf2Node({url: 'media/gltf/space/space.gltf'});
-      let solarSystem = new Gltf2Node({url: url: 'terrain3.gltf'});
-
+      let solarSystem = new Gltf2Node({url: 'media/gltf/space/space.gltf'});
       // The solar system is big (citation needed). Scale it down so that users
       // can move around the planets more easily.
       solarSystem.scale = [0.1, 0.1, 0.1];
-      //solarSystem.translate = [0.1, 0.1, 0.1];
       scene.addNode(solarSystem);
-       //Still adding a skybox, but only for the benefit of the inline view.
+      // Still adding a skybox, but only for the benefit of the inline view.
       let skybox = new SkyboxNode({url: 'media/textures/milky-way-4k.png'});
       scene.addNode(skybox);
 
@@ -101,8 +89,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         });
         document.querySelector('header').appendChild(xrButton.domElement);
 
-		
-
         if (navigator.xr) {
           // Checks to ensure that 'immersive-ar' mode is available, and only
           // enables the button if so.
@@ -112,30 +98,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
           navigator.xr.requestSession('inline').then(onSessionStarted);
         }
-        
-        greenButton.addEventListener("click", onGreenButtonClicked);
-      }
-      
-      function onGreenButtonClicked() {
-       // if (!xrSession) {
-          // Ask for an optional DOM Overlay, see https://immersive-web.github.io/dom-overlays/
-          /**navigator.xr
-            .requestSession("immersive-ar", {
-              optionalFeatures: ["dom-overlay"],
-              domOverlay: { root: document.getElementById("overlay") }
-            })
-            .then(onSessionStarted, onRequestSessionError);
-        }**/
-        
-        	//xrHitTestSource.cancel();
-       // xrHitTestSource = null;
-       // session.end();
-        window.open("hit-test.html");
-       // }
-        
-        //window.location.href = "hit-test2.html";
-        
-        
       }
 
       function onRequestSession() {
@@ -143,12 +105,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         // environment will be visible either via video passthrough or a
         // transparent display. This may be presented either in a headset or
         // fullscreen on a mobile device.
-        //return navigator.xr.requestSession('immersive-ar', {requiredFeatures: ['dom-overlay'], domOverlay: {
-       //root: document.getElementById("overlay")
-        //    }})
-
-
-       return navigator.xr.requestSession('immersive-ar')
+        return navigator.xr.requestSession('immersive-ar')
             .then((session) => {
               xrButton.setSession(session);
               session.isImmersive = true;
@@ -179,9 +136,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
       function onSessionStarted(session) {
         session.addEventListener('end', onSessionEnded);
-
-		greenButton.innerHTML = "Pathway";
-
 
         if (session.isImmersive) {
           // When in 'immersive-ar' mode don't draw an opaque background because
@@ -223,13 +177,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                          xrImmersiveRefSpace :
                          inlineViewerHelper.referenceSpace;
         let pose = frame.getViewerPose(refSpace);
-			
-	
-    
-
-    
-
-
 
         scene.startFrame();
 
