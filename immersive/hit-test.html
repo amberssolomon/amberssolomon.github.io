@@ -44,11 +44,11 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       </details>
     </header>
     
-          <div id="overlay">
+          <!--div id="overlay">
  <button id="green-button" class="barebones-button" hidden="hidden">
             Coverage
           </button>
-        </div>
+        </div-->
 
     <script type="module">
       import {WebXRButton} from './js/util/webxr-button.js';
@@ -66,7 +66,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let xrRefSpace = null;
       let xrViewerSpace = null;
       let xrHitTestSource = null;
-      let greenButton = document.getElementById("green-button");
+      //let greenButton = document.getElementById("green-button");
 
 
       // WebGL scene globals.
@@ -119,7 +119,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
                       .then((supported) => {
             xrButton.enabled = supported;
           });
-          greenButton.addEventListener("click", onGreenButtonClicked);
+          //greenButton.addEventListener("click", onGreenButtonClicked);
           //redButton.addEventListener("click", onRedButtonClicked);
           
          // greenButton.addEventListener('click', function () { 
@@ -161,6 +161,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       function onRedButtonClicked() {
         if (!xrSession) {
           // Ask for an optional DOM Overlay, see https://immersive-web.github.io/dom-overlays/
+         /**
+         navigator.xr
+            .requestSession("immersive-ar", {
+              optionalFeatures: ["dom-overlay"],
+              domOverlay: { root: document.getElementById("overlay") }
+            })
+            .then(onSessionStarted, onRequestSessionError);
+        } 
+        **/
+         
+         
           navigator.xr
             .requestSession("immersive-ar", {
               optionalFeatures: ["dom-overlay"],
@@ -171,6 +182,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       }
 
 
+      /**
+      
       function onRequestSession() {
         return navigator.xr.requestSession('immersive-ar', 
         {requiredFeatures: ['local', 'hit-test', 'dom-overlay'], domOverlay: {
@@ -183,11 +196,25 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
           onSessionStarted(session);
         });
       }
+**/
+
+	function onRequestSession() {
+        return navigator.xr.requestSession('immersive-ar', 
+        {requiredFeatures: ['local', 'hit-test'] })
+                           .then((session) => {
+          //greenButton.style.visibility = 'hidden';
+          
+          xrButton.setSession(session);
+          onSessionStarted(session);
+        });
+      }
+
+
 
       function onSessionStarted(session) {
         xrSession = session;
        
-        greenButton.innerHTML = "Map";
+        //greenButton.innerHTML = "Map";
 
 
        
